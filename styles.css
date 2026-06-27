@@ -223,7 +223,7 @@ img {
 }
 
 .perfil__name {
-  font: var(--font-regular) var(--biggest-font) var(--second-font);
+  font: var(--font-regular) var(--biggest-font);
   margin-bottom: 1rem;
 }
 
