@@ -175,31 +175,6 @@ img {
   background-color: var(--first-color);
 }
 
-.hero{
-    height: 100vh;
-    background: url("images/your-photo.jpg") center top/cover no-repeat;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 2rem;
-}
-
-.hero-card{
-    width: min(90%, 450px);
-    background: rgba(20,20,20,.45);
-    backdrop-filter: blur(14px);
-    border: 2px solid rgba(255,255,255,.45);
-    border-radius: 30px;
-    padding: 2rem;
-    margin-bottom: 1rem;
-}
-
-@media (max-width:768px){
-    .hero{
-        height: 100vh;
-        background-position: center top;
-    }
-}
 
 /*=============== HOME ===============*/
 /*===== PERFIL =====*/
