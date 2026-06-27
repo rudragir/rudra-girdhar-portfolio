@@ -27,8 +27,8 @@
   );
 
   /* ========== font typography ========== */
-  --body-font: "Montserrat Alternates", sans-serif;
-  --second-font: "Grechen Fuemen", cursive;
+  --body-font: sans-serif;
+  --second-font: cursive;
   --biggest-font: 2.5rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
