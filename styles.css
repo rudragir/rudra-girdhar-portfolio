@@ -197,13 +197,12 @@ img {
 } */
 
 .perfil__img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
+   position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center top;
 }
 .perfil{
   position: relative;
@@ -212,17 +211,33 @@ img {
   display: grid;
   overflow: hidden;
   background: #000;
+    height: 520px;
+    border-radius: 2rem;
 }
 .perfil__data {
-  align-self: flex-end;
-  background-color: hsla(0, 0%, 1%, 0.1);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  padding: 1.5rem 1rem;
-  border-radius: 1.5rem;
-  border: 2px solid hsla(0, 0%, 100%, 0.5);
-}
+  position:absolute;
+    left:1.5rem;
+    right:1.5rem;
+    bottom:1.5rem;
 
+    backdrop-filter:blur(18px);
+    background:rgba(20,20,20,.25);
+
+    border:2px solid rgba(255,255,255,.35);
+    border-radius:2rem;
+    padding:1.5rem;
+}
+@media screen and (max-width:768px){
+
+    .perfil{
+        height:100vh;
+    }
+
+    .perfil__img{
+        object-position:center;
+    }
+
+}
 .perfil__name {
   font: var(--font-regular) var(--biggest-font) var(--second-font);
   margin-bottom: 1rem;
