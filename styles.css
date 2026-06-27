@@ -27,8 +27,8 @@
   );
 
   /* ========== font typography ========== */
-  --body-font: sans-serif;
-  --second-font: cursive;
+  --body-font: "Montserrat Alternates", sans-serif;
+  --second-font: "Grechen Fuemen", cursive;
   --biggest-font: 2.5rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -223,7 +223,7 @@ img {
 }
 
 .perfil__name {
-  font: var(--font-regular) var(--biggest-font);
+  font: var(--font-regular) var(--biggest-font) var(--second-font);
   margin-bottom: 1rem;
 }
 
@@ -737,7 +737,7 @@ img {
   .nav__list {
     column-gap: 1.25rem;
   }
-
+  
   .home__container,
   .projects__container,
   .services__container,
@@ -757,7 +757,7 @@ img {
   .perfil {
     height: 100%;
   }
-
+  
   .projects__container,
   .services__container {
     grid-template-columns: repeat(2, 350px);
