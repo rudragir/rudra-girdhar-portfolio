@@ -177,80 +177,68 @@ img {
 
 
 /*=============== HOME ===============*/
-/*===== PERFIL =====*/
-/* .perfil {
-  position: relative;
-  background: var(--conic-gradient);
-  height: 415px;
-  border-radius: 2rem;
-  padding: 1rem;
-  display: grid;
-  overflow: hidden;
-} */
+/* ================= PROFILE ================= */
 
+.perfil{
+    position: relative;
+    overflow: hidden;
 
-/* .perfil__img {
-  width: 100%;
-  position: absolute;
-  justify-self: right;
-  align-self: flex-end;
-} */
+    height: 680px;
+    border-radius: 2rem;
+    padding: 2rem;
+
+    display: flex;
+    align-items: flex-end;
+
+    background: #000;
+}
 
 .perfil__img{
-   position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center top;
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center top;
+
+    z-index: 0;
 }
-.perfil{
-  position: relative;
-  border-radius: 2rem;
-  padding: 1rem;
-  display: grid;
-  overflow: hidden;
-  background: #000;
-    height: 520px;
+
+.perfil__data{
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 380px;
+
+    padding: 1.8rem;
+
     border-radius: 2rem;
-}
-.perfil__data {
-  position:absolute;
-    left:1.5rem;
-    right:1.5rem;
-    bottom:1.5rem;
 
-    backdrop-filter:blur(18px);
-    background:rgba(20,20,20,.25);
+    background: rgba(25,25,25,.28);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
 
-    border:2px solid rgba(255,255,255,.35);
-    border-radius:2rem;
-    padding:1.5rem;
-}
-@media screen and (max-width:768px){
-
-    .perfil{
-        height:100vh;
-    }
-
-    .perfil__img{
-        object-position:center;
-    }
-
-}
-.perfil__name {
-  font: var(--font-regular) var(--biggest-font) var(--second-font);
-  margin-bottom: 1rem;
+    border: 2px solid rgba(255,255,255,.35);
 }
 
-.perfil__buttons {
-  display: grid;
-  column-gap: 0.5rem;
-  grid-template-columns: repeat(2, 1fr);
+.perfil__name{
+    font-family: var(--second-font);
+    font-size: var(--biggest-font-size);
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
 }
 
-.perfil__buttons .button {
-  padding: 0.75rem 0;
+.perfil__buttons{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: .75rem;
+}
+
+.perfil__buttons .button{
+    padding: .9rem 0;
 }
 /*===== INFO =====*/
 .info,
